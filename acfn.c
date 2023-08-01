@@ -375,6 +375,11 @@ void yyerror(char *s, ...) {
 	exit(1);
 }
 
+void exit_process(){
+printf("Ok, done.\n");
+exit(0);
+}
+
 int main()
 {
 	printf("> ");

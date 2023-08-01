@@ -47,7 +47,6 @@ calclist : /* nothing */
 		dodef($3, $5, $8);
 		printf("Defined %s\n> ", $3->name);
 	}
-	| calclist QUIT EOL { printf("Ok, done.\n"); return 0; }
 	| calclist error EOL { yyerrok; printf("> "); }
 	;
 
